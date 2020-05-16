@@ -9,8 +9,6 @@ body {
 }
 
 @media screen and (max-width: 1440px) {
-
-
 	html {
 		height: 100%;
 	}
@@ -97,9 +95,37 @@ body {
 
 /* Mobile screen */
 @media screen and (max-width:375px) {
+
+	/* added display grid */
 	.container {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
-		grid-template-rows: 4, minmax(200px, auto);
+		grid-template-rows: repeat(4, minmax(200px, auto));
+		padding: 0;
+		margin: 0;
+	}
+
+	.left {
+		grid-column: 1/13;
+		grid-row: 1/2;
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: repeat(4, minmax(100px, auto));
+		padding: 0;
+		margin: 0;
+	}
+
+	.left p br:nth-child(2) {
+		display: none;
+	}
+
+	.right {
+		grid-column: 1/13;
+		grid-row: 2/3;
+	}
+
+	.left h1 {
+		grid-row: 1/2;
+		grid-column: 1/12;
 	}
 }
