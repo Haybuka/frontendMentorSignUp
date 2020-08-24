@@ -101,6 +101,9 @@ form > small {
 	font-style: normal;
 	color: hsla(249, 10%, 26%, 0.5);
 }
+form > small > br {
+	display: none;
+}
 form span {
 	font-weight: 600;
 	color: hsl(0, 100%, 74%);
@@ -148,5 +151,11 @@ input[type='submit'] {
 
 	.trial {
 		width: 360px;
+	}
+	form > small {
+		text-align: center;
+	}
+	form > small > br {
+		display: block;
 	}
 }
