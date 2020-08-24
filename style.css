@@ -11,14 +11,21 @@ body {
 #container {
 	display: flex;
 	justify-content: space-around;
-	margin-top: 3%;
 	justify-items: center;
+	width: 1200px;
+	max-width: 100%;
+	margin: 3% auto;
 }
 #left {
 	display: flex;
 	justify-items: center;
 	align-self: center;
 	color: #fff;
+}
+#right {
+	display: flex;
+	justify-items: center;
+	align-self: center;
 }
 #left h2 {
 	font-weight: 700;
@@ -118,4 +125,28 @@ input[type='submit'] {
 }
 .trial span {
 	font-weight: normal;
+}
+
+@media screen and (max-width: 1020px) {
+	#container {
+		display: block;
+		margin: 5% auto;
+	}
+	#left {
+		display: block;
+		text-align: center;
+	}
+	#right {
+		display: flex;
+		justify-content: center;
+	}
+}
+@media screen and (max-width: 510px) {
+	form {
+		width: 360px;
+	}
+
+	.trial {
+		width: 360px;
+	}
 }
