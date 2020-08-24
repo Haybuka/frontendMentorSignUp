@@ -3,21 +3,28 @@
 }
 body {
 	font-family: 'Poppins';
+	background: url('images/bg-intro-desktop.png');
+	background-color: hsl(0, 100%, 74%);
+	background-repeat: no-repeat;
+	background-position: center;
 }
 #container {
 	display: flex;
 	justify-content: space-around;
-	margin-top: 5%;
+	margin-top: 3%;
+	justify-items: center;
 }
 #left {
 	display: flex;
 	justify-items: center;
 	align-self: center;
+	color: #fff;
 }
 #left h2 {
 	font-weight: 700;
 	font-size: 3em;
 	margin-bottom: 10px;
+	line-height: 50px;
 }
 input {
 	display: block;
@@ -70,7 +77,7 @@ form small {
 	color: hsl(0, 100%, 74%);
 }
 form {
-	width: 400px;
+	width: 500px;
 	position: relative;
 	background-color: #fff;
 	padding: 30px;
@@ -103,7 +110,7 @@ input[type='submit'] {
 	padding: 1px 25px;
 	text-align: center;
 	color: #fff;
-	width: 400px;
+	width: 500px;
 	font-weight: bold;
 	background-color: hsl(248, 32%, 49%);
 	border-radius: 10px;

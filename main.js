@@ -11,6 +11,7 @@ let firstIcon = forms.querySelector('.firstIcon')
 let secondIcon = forms.querySelector('.secondIcon')
 let thirdIcon = forms.querySelector('.thirdIcon')
 let fourthIcon = forms.querySelector('.fourthIcon')
+password.value = ""
 forms.addEventListener('submit', function (e) {
     e.preventDefault();
     // first Name Validation
