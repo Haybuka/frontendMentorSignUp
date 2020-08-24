@@ -4,6 +4,21 @@
 body {
 	font-family: 'Poppins';
 }
+#container {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 5%;
+}
+#left {
+	display: flex;
+	justify-items: center;
+	align-self: center;
+}
+#left h2 {
+	font-weight: 700;
+	font-size: 3em;
+	margin-bottom: 10px;
+}
 input {
 	display: block;
 
@@ -13,10 +28,31 @@ input {
 	margin-top: 20px;
 	border: 1px solid hsl(249, 10%, 26%);
 }
-input + img {
+form label {
+	background: red;
+}
+form img {
 	position: absolute;
 	right: 10%;
-	top: 10%;
+}
+.show {
+	display: block !important;
+}
+form .firstIcon {
+	top: 9%;
+	display: none;
+}
+form .secondIcon {
+	top: 27%;
+	display: none;
+}
+form .thirdIcon {
+	top: 46%;
+	display: none;
+}
+form .fourthIcon {
+	top: 64%;
+	display: none;
 }
 input.firstName {
 	margin-top: 0;
