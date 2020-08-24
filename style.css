@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 }
 body {
-	font-family: 'Poppins';
+	font-family: 'Poppins', sans-serif;
 	background: url('images/bg-intro-desktop.png');
 	background-color: hsl(0, 100%, 74%);
 	background-repeat: no-repeat;
