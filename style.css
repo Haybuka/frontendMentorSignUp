@@ -6,11 +6,17 @@ body {
 }
 input {
 	display: block;
+
 	border-radius: 5px;
 	padding: 15px 15px;
 	width: 100%;
 	margin-top: 20px;
 	border: 1px solid hsl(249, 10%, 26%);
+}
+input + img {
+	position: absolute;
+	right: 10%;
+	top: 10%;
 }
 input.firstName {
 	margin-top: 0;
@@ -29,17 +35,32 @@ form small {
 }
 form {
 	width: 400px;
-	background-color: red;
+	position: relative;
+	background-color: #fff;
 	padding: 30px;
+	border: 1px solid hsla(249, 10%, 26%, 0.4);
 	border-radius: 10px;
 	margin-top: 20px;
 	box-shadow: 0 5px 1px hsla(249, 10%, 26%, 0.4);
 }
+form > small {
+	font-weight: 400;
+	font-size: 10px;
+	display: block;
+	margin-top: 10px;
+	font-style: normal;
+	color: hsla(249, 10%, 26%, 0.5);
+}
+form span {
+	font-weight: 600;
+	color: hsl(0, 100%, 74%);
+}
 input[type='submit'] {
 	background: hsl(154, 59%, 51%);
 	color: #fff;
-	border-style: groove;
-	font-weight: bold;
+	border: none;
+	font-weight: 600;
+	letter-spacing: 1px;
 	width: 100%;
 }
 .trial {
@@ -51,4 +72,7 @@ input[type='submit'] {
 	background-color: hsl(248, 32%, 49%);
 	border-radius: 10px;
 	box-shadow: 0 5px 1px hsla(249, 10%, 26%, 0.4);
+}
+.trial span {
+	font-weight: normal;
 }
