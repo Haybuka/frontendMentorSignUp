@@ -22,39 +22,50 @@
     }
   </style>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet"> -->
 </head>
 
 <body>
 
-  <div class="container">
-
-    <div class="left">
-      <h1>Learn to code by <br /> watching others</h1>
-
+  <div id="container">
+    <div id="left">
+      <h3>Learn to code by <br /> watching others</h3>
       <p>See how experienced developers solve problems in real-time.
         <br /> Watching scripted tutorials is great,
         but understanding how
         <br />
         developers think is invaluable. </p>
-
     </div>
 
-    <div class="right">
-      <p class="trial">Try it free 7 days then #500 thereafter</p>
+    <div id="right">
+      <div class="trial">
+        <p>Try it free 7 days then #500 thereafter</p>
+      </div>
       <form class"forms" action="">
-
-        <input type="text" placeholder="first Name" required> <br />
-        <input type="text" placeholder="Last Name" required><br />
-        <input type="email" placeholder="Email Address" required><br />
-        <input type="password" placeholder="Password" required><br />
-        <button>CLAIM YOUR FREE TRIAL</button> <br /> <br />
+        <label for="">
+          <input type="text" placeholder="first Name" class="firstName"> 
+       <small> Hi</small> 
+        </label>
+        <label for="">
+          <input type="text" placeholder="Last Name" class="lastName">
+       <small> </small> 
+        </label>
+       <label for="">
+        <input type="email" placeholder="Email Address">
+       <small> </small>
+      </label>
+        <label for="">
+          <input type="password" placeholder="Password">
+       <small> </small> 
+        </label>
+        <label for="">
+          <input type="submit" value="CLAIM YOUR FREE TRIAL">
+       <small> </small> 
+        </label>
         <small> By clicking the button, you are agreeing to our <span>Terms and Services</span> </small>
       </form>
-
-
-
-
+       <br /> <br />
+      
     </div>
   </div>
 
@@ -64,6 +75,7 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer> -->
+  <script src="main.js"></script>
 </body>
 
 </html>
